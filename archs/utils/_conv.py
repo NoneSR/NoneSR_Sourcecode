@@ -14,7 +14,7 @@ __all__ = ['Conv2d1x1', 'Conv2d3x3', 'MeanShift',
            'ShiftConv2d1x1', 'AffineConv2d1x1',
            'PConv', 'RepConv']
 
-#"Re-parameterization can be done by replacing the Conv  -modify by Zhu"
+#"Use a pre-trained model, set strict=Flase,then replace Conv with RepConv.-modify by Zhu from 'REFCONV: RE-PARAMETERIZED REFOCUSING CON- VOLUTION FOR POWERFUL CONVNETS'"
 class RepConv(nn.Module):
 
     def __init__(self, in_channels, out_channels, kernel_size, stride, padding=None, groups=1,
