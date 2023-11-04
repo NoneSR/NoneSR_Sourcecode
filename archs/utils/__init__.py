@@ -6,7 +6,7 @@ from ._attention import ChannelAttention, SpatialAttention, PixelAttention, \
 from ._backbone import DistBackbone, TransformerGroup, UBackbone, Upsampler
 from ._conv import Conv2d1x1, Conv2d3x3, MeanShift, \
     DWConv2d, BSConv2d, CGConv2d, ShiftConv2d1x1, AffineConv2d1x1, \
-    PConv
+    PConv, RepConv
 from ._linear import GroupLinear
 from ._norm import LayerNorm4D
 from ._toekn_mixer import FocalModulation, PixelMixer, Shift
